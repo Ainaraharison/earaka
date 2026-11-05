@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ARAKA — Apprends chaque jour, deviens exceptionnel</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('earaka-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════
+         LANDING SCREEN
+    ═══════════════════════════════════════════ -->
+    <div id="landing-screen" class="screen active">
+
+        <!-- Nav -->
+        <header class="landing-nav">
+            <div class="ln-logo">
+                <img src="logo.png" class="ln-logo-icon" alt="E-ARAKA logo">
+                <span class="brand">E-ARAKA</span>
+            </div>
+            <nav class="ln-links">
+                <a href="#features">Fonctionnalités</a>
+                <a href="#how">Comment ça marche</a>
+            </nav>
+            <div class="ln-actions">
+                <button class="btn btn-ghost-nav" id="btn-nav-login">Connexion</button>
+                <button class="btn btn-primary btn-sm" id="btn-nav-register">Créer un compte</button>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Apprentissage gamifié par l'IA
+                </div>
+                <h1 class="hero-title">
+                    Apprends chaque jour,<br>
+                    deviens <span class="gradient-text">exceptionnel</span>
+                </h1>
+                <p class="hero-subtitle">
+                    E-ARAKA transforme ton apprentissage quotidien en aventure gamifiée. Streaks, quiz IA, défis personnalisés et classements — reste motivé, progresse plus vite.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-hero-cta" id="btn-hero-start">
+                        Commencer gratuitement
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <button class="btn btn-ghost-hero" id="btn-hero-login">J'ai déjà un compte</button>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="mock-card mock-streak">
+                    <span class="mock-icon">🔥</span>
+                    <div>
+                        <div class="mock-val">12</div>
+                        <div class="mock-lbl">Jours de streak</div>
+                    </div>
+                </div>
+                <div class="mock-card mock-points">
+                    <span class="mock-icon">💰</span>
+                    <div>
+                        <div class="mock-val">2 840</div>
+                        <div class="mock-lbl">Points totaux</div>
+                    </div>
+                </div>
+                <div class="mock-card mock-level">
+                    <div class="mock-level-header">
+                        <span>📊 Niveau 8</span>
+                        <span class="mock-pct">80%</span>
+                    </div>
+                    <div class="mock-bar-bg">
+                        <div class="mock-bar-fill" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="mock-card mock-badge-notif">
+                    🏅 Badge débloqué — <strong>Semaine parfaite</strong>
+                </div>
+                <div class="mock-card mock-quiz-preview">
+                    <div class="mock-quiz-q">Quiz IA — Biologie</div>
+                    <div class="mock-quiz-opt correct-opt">✓ La photosynthèse convertit la lumière</div>
+                    <div class="mock-quiz-opt">La respiration cellulaire</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Band -->
+        <div class="stats-band">
+            <div class="sil">
+                <div class="sil-val">100+</div>
+                <div class="sil-lbl">Apprenants actifs</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="sil">
+                <div class="sil-val">1000+</div>
+                <div class="sil-lbl">Sessions loguées</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="sil">
+                <div class="sil-val">50+</div>
+                <div class="sil-lbl">Badges à débloquer</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="sil">
+                <div class="sil-val">24/7</div>
+                <div class="sil-lbl">Chat IA disponible</div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <section id="features" class="features-section">
+            <div class="section-pill">Fonctionnalités</div>
+            <h2 class="section-title">Tout ce qu'il te faut pour<br><span class="gradient-text">apprendre mieux</span></h2>
+            <p class="section-sub">Six outils puissants conçus pour maximiser ta progression et garder ta motivation au maximum.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="fc-icon">🔥</div>
+                    <h3>Streaks quotidiens</h3>
+                    <p>Ne brise jamais ta série. Chaque jour d'apprentissage te propulse vers le prochain niveau et ancre l'habitude durablement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon">🎲</div>
+                    <h3>Quiz IA adaptatif</h3>
+                    <p>Des questions générées en temps réel selon tes centres d'intérêt et ton niveau. Apprends en testant tes connaissances.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon">🎯</div>
+                    <h3>Défi du Jour</h3>
+                    <p>Un nouveau défi unique chaque jour pour sortir de ta zone de confort et explorer des sujets que tu n'aurais pas choisi seul.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon">🏆</div>
+                    <h3>Classement</h3>
+                    <p>Compète avec des apprenants du monde entier. Gagne des badges, grimpe dans le classement et montre ce dont tu es capable.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon">💬</div>
+                    <h3>Chat IA personnel</h3>
+                    <p>Pose n'importe quelle question à ton assistant disponible 24h/24. Explications claires, conseils personnalisés, ressources — à la demande.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon">📊</div>
+                    <h3>Analytics avancées</h3>
+                    <p>Visualise ta progression, tes sujets favoris et tes performances. Identifie tes forces et axes d'amélioration en un coup d'œil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="how" class="how-section">
+            <div class="how-inner">
+                <div class="section-pill">Comment ça marche</div>
+                <h2 class="section-title">Simple comme <span class="gradient-text">1, 2, 3</span></h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <h3>Crée ton compte</h3>
+                        <p>Inscris-toi en 30 secondes — gratuit, sans carte bancaire. Choisis tes centres d'intérêt pour personnaliser l'expérience.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <h3>Logue tes sessions</h3>
+                        <p>Après chaque session, enregistre le sujet et la durée. L'IA t'attribue des points, un streak et des badges automatiquement.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <h3>Progresse & maîtrise</h3>
+                        <p>Monte en niveaux, débloque des badges, relève les défis du jour et grimpe dans le classement mondial.</p>
+                    </div>
+                </div>
+
+                <!-- Demo Widget -->
+                <div class="demo-widget">
+                    <div class="demo-chrome">
+                        <div class="chrome-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="chrome-title">E-ARAKA — Aperçu interactif</span>
+                    </div>
+
+                    <div class="demo-tabs">
+                        <button class="demo-tab active" data-demo="suggestions">💡 Suggestions</button>
+                        <button class="demo-tab" data-demo="defi">🎯 Défi du Jour</button>
+                        <button class="demo-tab" data-demo="quiz">🎲 Quiz IA</button>
+                        <button class="demo-tab" data-demo="chat">💬 Chat IA</button>
+                    </div>
+
+                    <div class="demo-panels">
+
+                        <!-- Suggestions -->
+                        <div class="demo-panel active" id="demo-suggestions">
+                            <p class="demo-panel-caption">Tes centres d'intérêt guident chaque suggestion</p>
+                            <div class="demo-interests-row">
+                                <span class="demo-tag">🐍 Python</span>
+                                <span class="demo-tag">🧠 Machine Learning</span>
+                                <span class="demo-tag">📐 Mathématiques</span>
+                                <span class="demo-tag">🌐 Web</span>
+                            </div>
+                            <div class="demo-flow-arrow">
+                                <span class="dfa-line"></span>
+                                <span class="dfa-label">✨ IA génère une suggestion personnalisée</span>
+                                <span class="dfa-line"></span>
+                            </div>
+                            <div class="demo-suggestion-box">
+                                <div class="demo-ai-label">
+                                    <span class="demo-ai-dot"></span>
+                                    Suggestion IA du jour
+                                </div>
+                                <p class="demo-suggestion-text">
+                                    Basé sur ton profil Python + Machine Learning, je te recommande d'implémenter un
+                                    <strong>réseau de neurones convolutif (CNN)</strong> avec PyTorch aujourd'hui. C'est
+                                    le bon moment : tu as étudié les bases du deep learning cette semaine.
+                                </p>
+                                <div class="demo-suggestion-meta">
+                                    <span>⏱️ ~60 min</span>
+                                    <span>📊 Intermédiaire</span>
+                                    <span>🎯 +120 pts estimés</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Défi du Jour -->
+                        <div class="demo-panel" id="demo-defi">
+                            <p class="demo-panel-caption">Un nouveau défi IA chaque jour, adapté à tes intérêts</p>
+                            <div class="demo-defi-card">
+                                <div class="demo-defi-date">📅 4 mai 2025 — Défi du Jour</div>
+                                <div class="demo-defi-cat">🤖 Intelligence Artificielle</div>
+                                <div class="demo-defi-title">Implémente un perceptron simple en Python</div>
+                                <p class="demo-defi-desc">
+                                    Crée un perceptron à une couche capable de résoudre le problème XOR. Utilise
+                                    uniquement NumPy — pas de bibliothèques ML. Entraîne le modèle sur 500 époques
+                                    et affiche la courbe de perte.
+                                </p>
+                                <div class="demo-defi-meta">
+                                    <span>⏱️ ~45 min</span>
+                                    <span>💰 +150 pts</span>
+                                    <span>🔥 Streak +1</span>
+                                </div>
+                                <div class="demo-defi-btn">
+                                    Accepter le défi
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quiz IA -->
+                        <div class="demo-panel" id="demo-quiz">
+                            <p class="demo-panel-caption">Des questions générées en temps réel par l'IA sur tes sujets</p>
+                            <div class="demo-quiz-container">
+                                <div class="demo-quiz-header">
+                                    <div class="demo-progress-dots">
+                                        <span class="demo-dot filled"></span>
+                                        <span class="demo-dot filled"></span>
+                                        <span class="demo-dot"></span>
+                                        <span class="demo-dot"></span>
+                                        <span class="demo-dot"></span>
+                                    </div>
+                                    <span class="demo-quiz-label">Question 2/5 — Machine Learning</span>
+                                </div>
+                                <p class="demo-quiz-question">
+                                    Qu'est-ce que le <em>overfitting</em> (sur-apprentissage) en Machine Learning ?
+                                </p>
+                                <div class="demo-quiz-options">
+                                    <div class="dqo">A. Le modèle apprend trop peu de données</div>
+                                    <div class="dqo correct">✓ B. Le modèle mémorise les données d'entraînement au lieu de généraliser</div>
+                                    <div class="dqo wrong">✗ C. Le modèle s'entraîne trop lentement</div>
+                                    <div class="dqo">D. Le modèle manque de puissance de calcul</div>
+                                </div>
+                                <div class="demo-quiz-expl">
+                                    💡 <strong>Explication :</strong> L'overfitting survient quand un modèle "mémorise" les
+                                    exemples d'entraînement plutôt que d'en extraire des patterns généralisables.
+                                    Solution : dropout, régularisation L2, ou augmentation des données.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chat IA -->
+                        <div class="demo-panel" id="demo-chat">
+                            <p class="demo-panel-caption">Ton coach IA répond à toutes tes questions, 24h/24</p>
+                            <div class="demo-chat-container">
+                                <div class="demo-msg bot">
+                                    👋 Bonjour ! Je vois que tu étudies Python cette semaine. Veux-tu qu'on explore ensemble les <strong>list comprehensions</strong> ?
+                                </div>
+                                <div class="demo-msg user">
+                                    Oui ! C'est quoi la vraie différence avec une boucle for classique ?
+                                </div>
+                                <div class="demo-msg bot">
+                                    Excellente question ! Une list comprehension est plus <strong>concise</strong> et souvent plus <strong>rapide</strong> en Python.<br><br>
+                                    Boucle classique : 3 lignes<br>
+                                    <code>result = []<br>for x in range(10):<br>&nbsp;&nbsp;result.append(x**2)</code><br><br>
+                                    List comprehension : 1 ligne<br>
+                                    <code>[x**2 for x in range(10)]</code>
+                                </div>
+                                <div class="demo-typing">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="demo-chat-input-row">
+                                    <div class="demo-chat-fake-input">Et le filter() dans tout ça ?</div>
+                                    <div class="demo-chat-send">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Demo Widget -->
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="cta-glow"></div>
+            <h2 class="cta-title">Prêt à transformer<br>ton <span class="gradient-text">apprentissage</span>&nbsp;?</h2>
+            <p class="cta-sub">Rejoins des milliers d'apprenants qui progressent chaque jour avec E-ARAKA.</p>
+            <button class="btn btn-primary btn-hero-cta" id="btn-cta-start">
+                Commencer gratuitement
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="landing-footer">
+            <span class="ln-logo"><img src="logo.png" class="ln-logo-icon" alt="E-ARAKA logo"><span class="brand">E-ARAKA</span></span>
+            <span>© 2025 — Apprends, progresse, maîtrise.</span>
+        </footer>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         AUTH MODAL
+    ═══════════════════════════════════════════ -->
+    <div id="auth-screen" class="screen">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="auth-container">
+            <button class="auth-close" id="btn-auth-close" title="Fermer">✕</button>
+
+            <div class="auth-header">
+                <img src="logo.png" class="logo-big" alt="E-ARAKA logo">
+                <h1>E-ARAKA</h1>
+                <p>Transforme ton apprentissage en aventure gamifiée</p>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Connexion</button>
+                <button class="auth-tab" data-tab="register">Inscription</button>
+            </div>
+
+            <!-- Login -->
+            <div class="auth-panel active" id="panel-login">
+                <div class="auth-form">
+                    <input type="email" id="login-email" placeholder="Email" autocomplete="email">
+                    <input type="password" id="login-password" placeholder="Mot de passe" autocomplete="current-password">
+                    <button id="btn-login" class="btn btn-primary btn-large">Se connecter</button>
+                    <div class="auth-divider"><span>ou</span></div>
+                    <a href="/auth/google" class="btn btn-google">
+                        <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+                        Continuer avec Google
+                    </a>
+                    <p id="login-error" class="error-msg"></p>
+                </div>
+            </div>
+
+            <!-- Register -->
+            <div class="auth-panel" id="panel-register">
+                <div class="auth-form">
+                    <input type="text" id="register-username" placeholder="Nom d'utilisateur" maxlength="30" autocomplete="off">
+                    <input type="email" id="register-email" placeholder="Email" autocomplete="email">
+                    <input type="password" id="register-password" placeholder="Mot de passe (6 caractères min.)" autocomplete="new-password">
+                    <input type="password" id="register-confirm" placeholder="Confirmer le mot de passe" autocomplete="new-password">
+                    <button id="btn-register" class="btn btn-primary btn-large">Créer mon compte</button>
+                    <div class="auth-divider"><span>ou</span></div>
+                    <a href="/auth/google" class="btn btn-google">
+                        <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+                        S'inscrire avec Google
+                    </a>
+                    <p id="register-error" class="error-msg"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         MAIN APP
+    ═══════════════════════════════════════════ -->
+    <div id="app-screen" class="screen">
+
+        <!-- Mobile top bar (burger menu trigger) -->
+        <div class="mobile-topbar">
+            <button class="mobile-brand nav-btn" data-tab="dashboard"><span>📚</span> E-ARAKA</button>
+            <div class="mobile-topbar-actions">
+                <button class="mobile-help-btn" id="btn-mobile-aide" aria-label="Aide" title="Aide">?</button>
+                <button class="mobile-burger" id="btn-burger" aria-label="Ouvrir le menu">☰</button>
+            </div>
+        </div>
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header nav-btn" data-tab="dashboard" style="cursor:pointer">
+                <img src="logo.png" class="logo" alt="E-ARAKA logo">
+                <span class="brand">E-ARAKA</span>
+            </div>
+
+            <div class="sidebar-nav">
+                <button class="nav-btn active" data-tab="dashboard">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-label">Dashboard</span>
+                </button>
+                <button class="nav-btn" data-tab="suggestions">
+                    <span class="nav-icon">💡</span>
+                    <span class="nav-label">Suggestions</span>
+                </button>
+                <button class="nav-btn" data-tab="log">
+                    <span class="nav-icon">📝</span>
+                    <span class="nav-label">Logger</span>
+                </button>
+                <button class="nav-btn" data-tab="quiz">
+                    <span class="nav-icon">🎲</span>
+                    <span class="nav-label">Quiz IA</span>
+                </button>
+                <button class="nav-btn" data-tab="challenge">
+                    <span class="nav-icon">🎯</span>
+                    <span class="nav-label">Défi du Jour</span>
+                </button>
+                <button class="nav-btn" data-tab="leaderboard">
+                    <span class="nav-icon">🏆</span>
+                    <span class="nav-label">Classement</span>
+                </button>
+                <button class="nav-btn" data-tab="chat">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-label">Chat IA</span>
+                </button>
+                <button class="nav-btn" data-tab="aide">
+                    <span class="nav-icon">❓</span>
+                    <span class="nav-label">Aide</span>
+                </button>
+            </div>
+
+            <div class="sidebar-footer">
+                <button id="btn-theme-toggle" class="theme-toggle-btn" title="Changer le thème">
+                    <span class="theme-icon">🌙</span>
+                    <span class="theme-label">Mode sombre</span>
+                </button>
+                <button class="nav-btn sidebar-user-block" data-tab="profil" title="Mon profil">
+                    <span class="sidebar-avatar-ring" id="sidebar-avatar-init">?</span>
+                    <span id="nav-user" class="nav-user"></span>
+                </button>
+                <button id="btn-logout" class="btn btn-sm btn-ghost-nav sidebar-logout">Déconnexion</button>
+            </div>
+        </nav>
+
+        <!-- App Main Content -->
+        <main class="app-main">
+
+            <!-- ── DASHBOARD ── -->
+            <section id="tab-dashboard" class="tab-content active">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title" id="dash-greeting">Tableau de bord</h1>
+                        <p class="page-subtitle" id="dash-subtitle">Suis ta progression et tes performances</p>
+                    </div>
+                    <div class="page-actions">
+                        <button class="btn btn-secondary btn-sm">↻ Cette semaine</button>
+                        <button class="btn btn-primary btn-sm" id="btn-quick-log">+ Logger une session</button>
+                    </div>
+                </div>
+
+                <div class="card profile-cta hidden" id="profile-cta">
+                    <div class="profile-cta-info">
+                        <p class="card-title">👤 Complète ton profil</p>
+                        <p class="card-sub" id="profile-cta-sub">Plus ton profil est complet, plus les quiz, les idées et les conseils de l'IA te correspondent.</p>
+                        <div class="quiz-progress-track profile-cta-track"><div class="quiz-progress-fill" id="profile-cta-bar" style="width:0%"></div></div>
+                    </div>
+                    <button class="btn btn-primary" id="btn-profile-cta">Compléter mon profil →</button>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-card-v2">
+                        <div class="sc-header">
+                            <div class="sc-icon-bg sc-icon-orange">🔥</div>
+                            <span class="sc-title">Série</span>
+                        </div>
+                        <div class="sc-main"><span class="sc-num" id="s-streak">0</span><span class="sc-unit">jours</span></div>
+                        <div class="sc-delta" id="s-streak-delta">Meilleur : 0 j</div>
+                    </div>
+                    <div class="stat-card-v2">
+                        <div class="sc-header">
+                            <div class="sc-icon-bg sc-icon-yellow">💰</div>
+                            <span class="sc-title">Points</span>
+                        </div>
+                        <div class="sc-main"><span class="sc-num" id="s-points">0</span></div>
+                        <div class="sc-delta positive" id="s-points-delta">Niveau 1</div>
+                    </div>
+                    <div class="stat-card-v2">
+                        <div class="sc-header">
+                            <div class="sc-icon-bg sc-icon-blue">📊</div>
+                            <span class="sc-title">Niveau</span>
+                        </div>
+                        <div class="sc-main"><span class="sc-num" id="s-level">1</span></div>
+                        <div class="sc-delta" id="s-level-pts">160 pts pour niv. 2</div>
+                    </div>
+                    <div class="stat-card-v2">
+                        <div class="sc-header">
+                            <div class="sc-icon-bg sc-icon-purple">⏱️</div>
+                            <span class="sc-title">Temps total</span>
+                        </div>
+                        <div class="sc-main"><span class="sc-num" id="s-time-val">0</span><span class="sc-unit" id="s-time-unit">min</span></div>
+                        <div class="sc-delta" id="s-sessions-sub">0 sessions</div>
+                    </div>
+                </div>
+
+                <div class="dash-row dash-row-32">
+                    <div class="card">
+                        <div class="card-header-row">
+                            <div>
+                                <p class="card-title">Progression de niveau</p>
+                                <p class="card-sub" id="level-sub-text">0 / 400 pts pour atteindre le niveau 2</p>
+                            </div>
+                            <span class="badge-pill badge-pill-green" id="level-label">Niv. 1 · Débutant</span>
+                        </div>
+                        <div class="level-progress-track">
+                            <div class="level-progress-fill" id="level-progress" style="width:0%"></div>
+                        </div>
+                        <div class="level-pts-row">
+                            <span id="level-pts-current">0 pts</span>
+                            <span>plus que <strong id="level-pts-diff">400 pts</strong></span>
+                        </div>
+                        <div class="level-milestones" id="level-milestones"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header-row">
+                            <p class="card-title">Top sujets · 7 jours</p>
+                            <span class="card-link">Voir tout</span>
+                        </div>
+                        <div id="top-subjects"></div>
+                    </div>
+                </div>
+
+                <div class="dash-row dash-row-2col">
+                    <div class="card">
+                        <div class="card-header-row">
+                            <p class="card-title">Activité récente</p>
+                            <span class="card-link">Tout l'historique</span>
+                        </div>
+                        <div id="history-list"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header-row">
+                            <div>
+                                <p class="card-title">Badges débloqués</p>
+                                <p class="card-sub" id="badge-counter">0 / 0 collectés</p>
+                            </div>
+                            <span class="card-link">Galerie</span>
+                        </div>
+                        <div id="badges-grid" class="badges-grid-v2"></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ── SUGGESTIONS / GÉNÉRATEUR D'IDÉES ── -->
+            <section id="tab-suggestions" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Générateur d'idées</h1>
+                        <p class="page-subtitle">Des idées entrepreneuriales et éducatives fondées sur ton profil complet, pas seulement tes centres d'intérêt</p>
+                    </div>
+                </div>
+
+                <div class="idea-layout">
+                <div class="idea-flow-col">
+                <div class="card idea-card" id="idea-step-profile">
+                    <h3 class="idea-step-title">1 · Ton profil d'idéation</h3>
+                    <div class="form-section">
+                        <label class="form-label">Compétences &amp; ressources</label>
+                        <textarea id="idea-skills" rows="2" maxlength="400" placeholder="ex : Python, bases de données ; un laptop, petit budget, pas de réseau pro"></textarea>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Temps disponible</label>
+                        <textarea id="idea-time" rows="2" maxlength="400" placeholder="ex : 5 h par semaine, surtout le soir et le week-end"></textarea>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Personnalité &amp; style de travail</label>
+                        <textarea id="idea-personality" rows="2" maxlength="400" placeholder="ex : autonome, créatif, préfère les petits projets itératifs"></textarea>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Contraintes (perso &amp; pro)</label>
+                        <textarea id="idea-constraints" rows="2" maxlength="400" placeholder="ex : emploi à plein temps, ne peut pas se déplacer"></textarea>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Zone géographique</label>
+                        <input type="text" id="idea-location" placeholder="Ville, pays — reprise de ton onglet Profil">
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Type d'idée</label>
+                        <div class="quiz-pills" id="idea-type">
+                            <button type="button" class="quiz-pill" data-val="entrepreneuriale">💼 Entrepreneuriale</button>
+                            <button type="button" class="quiz-pill" data-val="educative">🎓 Éducative</button>
+                            <button type="button" class="quiz-pill selected" data-val="les_deux">✨ Les deux</button>
+                        </div>
+                    </div>
+                    <div class="idea-actions">
+                        <button class="btn btn-primary btn-large" id="btn-idea-clarify">🔍 Clarifier mon profil</button>
+                        <button class="btn btn-secondary btn-large hidden" id="btn-idea-direct">⚡ Générer directement</button>
+                    </div>
+                    <p class="form-label-hint" id="idea-clarified-hint" style="margin-top:.6rem"></p>
+                </div>
+
+                <div class="card idea-card hidden" id="idea-step-questions">
+                    <h3 class="idea-step-title">2 · Quelques précisions</h3>
+                    <div id="idea-questions-list"></div>
+                    <button class="btn btn-primary" id="btn-idea-answers">Continuer →</button>
+                </div>
+
+                <div class="card idea-card hidden" id="idea-step-clarified">
+                    <h3 class="idea-step-title">3 · Ton profil clarifié</h3>
+                    <div id="idea-clarified-text" class="idea-text-box"></div>
+                    <div class="form-section">
+                        <input type="text" id="idea-correction" maxlength="400" placeholder="Une imprécision ? Écris ta correction ici puis clique « Corriger »">
+                    </div>
+                    <div class="idea-actions">
+                        <button class="btn btn-primary" id="btn-idea-validate">✓ Valider et générer mon idée</button>
+                        <button class="btn btn-secondary" id="btn-idea-refine">✏️ Corriger</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="idea-result-col">
+                <div class="card idea-card idea-placeholder" id="idea-placeholder">
+                    <span class="idea-placeholder-icon">💡</span>
+                    <p class="idea-placeholder-text">Ton idée personnalisée s'affichera ici</p>
+                    <p class="form-label-hint">Remplis ton profil d'idéation à gauche, puis clique sur « Clarifier mon profil » ou « Générer directement ».</p>
+                </div>
+
+                <div class="card idea-card hidden" id="idea-step-result">
+                    <h3 class="idea-step-title">💡 Ton idée personnalisée</h3>
+                    <div id="idea-result-text" class="idea-text-box"></div>
+                    <details id="idea-eval-details" class="idea-eval-details hidden">
+                        <summary>📋 Évaluation — pertinence · faisabilité · originalité</summary>
+                        <div id="idea-eval-text" class="idea-text-box"></div>
+                    </details>
+                    <div class="idea-actions">
+                        <button class="btn btn-primary" id="btn-idea-regen">↻ Régénérer une autre idée</button>
+                        <button class="btn btn-secondary" id="btn-idea-restart">Modifier mon profil d'idéation</button>
+                    </div>
+                </div>
+
+                <div id="idea-loading" class="hidden" style="padding:2rem 0">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-caption" id="idea-loading-caption">Un instant...</p>
+                </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- ── LOGGER ── -->
+            <section id="tab-log" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Logger une session</h1>
+                        <p class="page-subtitle">Enregistre ce que tu viens d'apprendre. Ça prend 10 secondes.</p>
+                    </div>
+                </div>
+                <div class="logger-layout">
+                    <div class="card">
+                        <div class="form-section">
+                            <label class="form-label">Sujet <span class="form-label-hint">Choisis ou tape un sujet libre</span></label>
+                            <input type="text" id="log-subject" placeholder="Python, Machine Learning, Maths...">
+                            <div class="subject-pills" id="subject-pills"></div>
+                        </div>
+
+                        <div class="form-section">
+                            <label class="form-label">Durée <span class="form-label-hint" id="duration-selected-label"></span></label>
+                            <div class="duration-group">
+                                <button class="duration-btn" data-min="15">15 min</button>
+                                <button class="duration-btn" data-min="30">30 min</button>
+                                <button class="duration-btn" data-min="45">45 min</button>
+                                <button class="duration-btn" data-min="60">1 h</button>
+                                <button class="duration-btn duration-btn-other" id="btn-duration-other">+ Autre</button>
+                            </div>
+                            <input type="number" id="log-duration" placeholder="Durée en minutes..." min="1" max="1440" class="hidden" style="margin-top:.55rem">
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-label-row">
+                                <label class="form-label">Qu'as-tu appris ? <span class="form-label-hint">optionnel</span></label>
+                                <span class="char-counter" id="desc-counter">0 / 280</span>
+                            </div>
+                            <textarea id="log-desc" rows="3" placeholder="Une phrase suffit : un concept, un déclic, une difficulté..." maxlength="280"></textarea>
+                        </div>
+
+                        <div class="logger-footer">
+                            <span class="logger-preview" id="log-preview">Prêt à enregistrer</span>
+                            <button id="btn-log" class="btn btn-green">✓ Enregistrer la session</button>
+                        </div>
+                        <div id="log-result" class="result-box hidden"></div>
+                    </div>
+
+                    <div>
+                        <div class="card suggest-panel">
+                            <div class="suggestion-badge"><span class="suggestion-dot"></span>Suggestion IA du jour</div>
+                            <p class="suggestion-title" id="suggest-title-text">Qu'est-ce que tu veux apprendre ?</p>
+                            <p class="suggestion-desc" id="suggest-desc-text">L'IA génère une suggestion basée sur tes centres d'intérêt et ta progression actuelle.</p>
+                            <div class="suggestion-chips-row" id="suggest-chips-row"></div>
+                            <div class="suggestion-actions">
+                                <button id="btn-suggest" class="btn btn-secondary" style="width:100%;justify-content:center">✨ Obtenir une suggestion</button>
+                            </div>
+                            <div id="suggest-result" class="result-box hidden" style="margin-top:.9rem"></div>
+                        </div>
+                        <div class="tip-box" style="margin-top:.85rem">
+                            <p class="tip-box-title">💡 Astuce</p>
+                            <p class="tip-box-text">Tu peux logger jusqu'à <strong>3 sessions par jour</strong>. Chaque session protège ta série, et celles au-dessus de 30 min donnent un bonus de points.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── QUIZ ── -->
+            <section id="tab-quiz" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Quiz IA</h1>
+                        <p class="page-subtitle">Configure ton QCM et teste tes connaissances en temps réel</p>
+                    </div>
+                </div>
+                <div class="card quiz-outer-card">
+                    <div id="quiz-start">
+                        <div class="quiz-start-inner quiz-config">
+                            <div class="form-section">
+                                <div class="quiz-suggest-header">
+                                    <label class="form-label">💡 Suggestions adaptées à ton profil</label>
+                                    <button type="button" id="btn-quiz-suggest-refresh" class="quiz-suggest-refresh" title="Proposer d'autres sujets">🔄 Renouveler</button>
+                                </div>
+                                <div class="quiz-pills" id="quiz-topic-suggestions">
+                                    <span class="quiz-suggest-status">Chargement des suggestions…</span>
+                                </div>
+                            </div>
+                            <div class="form-section">
+                                <label class="form-label">Sujet du quiz</label>
+                                <input type="text" id="quiz-topic" placeholder="Tape le sujet que tu veux apprendre, ou choisis une suggestion">
+                                <p class="form-hint">Laisser vide = sujet tiré au hasard parmi tes centres d'intérêt</p>
+                            </div>
+                            <div class="form-section">
+                                <label class="form-label">Taille du QCM</label>
+                                <div class="quiz-cards" id="quiz-size">
+                                    <button type="button" class="quiz-cfg-card selected" data-val="flash">
+                                        <span class="qcc-title">Flash ⚡</span>
+                                        <span class="qcc-sub">L'essentiel</span>
+                                        <span class="qcc-desc">6 questions</span>
+                                    </button>
+                                    <button type="button" class="quiz-cfg-card" data-val="standard">
+                                        <span class="qcc-title">Standard 📚</span>
+                                        <span class="qcc-sub">Approfondi</span>
+                                        <span class="qcc-desc">12 questions</span>
+                                    </button>
+                                    <button type="button" class="quiz-cfg-card" data-val="examen">
+                                        <span class="qcc-title">Examen 🎓</span>
+                                        <span class="qcc-sub">Exhaustif</span>
+                                        <span class="qcc-desc">20 questions</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-section">
+                                <label class="form-label">Niveau de difficulté</label>
+                                <div class="quiz-cards" id="quiz-difficulty">
+                                    <button type="button" class="quiz-cfg-card" data-val="enfant">
+                                        <span class="qcc-title">Enfant 😊</span>
+                                        <span class="qcc-sub">Simple</span>
+                                        <span class="qcc-desc">8-12 ans</span>
+                                    </button>
+                                    <button type="button" class="quiz-cfg-card selected" data-val="standard">
+                                        <span class="qcc-title">Standard 🙂</span>
+                                        <span class="qcc-sub">Normal</span>
+                                        <span class="qcc-desc">Grand public</span>
+                                    </button>
+                                    <button type="button" class="quiz-cfg-card" data-val="expert">
+                                        <span class="qcc-title">Expert 🎯</span>
+                                        <span class="qcc-sub">Pointu</span>
+                                        <span class="qcc-desc">Spécialistes</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-section quiz-inline-section">
+                                <label class="form-label">Type de QCM</label>
+                                <div class="quiz-pills" id="quiz-type">
+                                    <button type="button" class="quiz-pill selected" data-val="classique">☰ Classique</button>
+                                    <button type="button" class="quiz-pill" data-val="vrai_faux">✓ Vrai/Faux</button>
+                                </div>
+                            </div>
+                            <div class="form-section quiz-inline-section" id="quiz-numopts-section">
+                                <label class="form-label">Nombre de propositions</label>
+                                <div class="quiz-pills" id="quiz-numopts">
+                                    <button type="button" class="quiz-pill" data-val="4">4 propositions</button>
+                                    <button type="button" class="quiz-pill selected" data-val="5">5 propositions</button>
+                                    <button type="button" class="quiz-pill" data-val="7">7 propositions</button>
+                                </div>
+                            </div>
+                            <div class="form-section quiz-multi-row" id="quiz-multi-section">
+                                <label class="quiz-switch">
+                                    <input type="checkbox" id="quiz-multi">
+                                    <span class="quiz-switch-slider"></span>
+                                </label>
+                                <span class="quiz-multi-label">Autoriser les réponses multiples</span>
+                            </div>
+                            <button id="btn-quiz-start" class="btn btn-primary btn-large">✨ Générer le Quiz</button>
+                        </div>
+                    </div>
+                    <div id="quiz-loading" class="hidden">
+                        <div class="loading-spinner"></div>
+                        <p class="loading-caption">Génération des questions par l'IA...</p>
+                    </div>
+                    <div id="quiz-game" class="hidden"></div>
+                    <div id="quiz-result" class="hidden"></div>
+                </div>
+            </section>
+
+            <!-- ── CHALLENGE ── -->
+            <section id="tab-challenge" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Défi du jour</h1>
+                        <p class="page-subtitle">Un défi unique chaque 24h, conçu pour te pousser un cran plus loin</p>
+                    </div>
+                </div>
+                <div class="challenge-outer">
+                    <div id="challenge-loading" class="loading-spinner"></div>
+                    <div id="challenge-content" class="hidden">
+                        <div class="challenge-card-v2">
+                            <div class="challenge-deco-blob"></div>
+                            <div class="challenge-date-row">
+                                <span id="challenge-date"></span>
+                                <span class="challenge-cat-badge" id="challenge-cat"></span>
+                            </div>
+                            <h2 class="challenge-title-v2" id="challenge-title"></h2>
+                            <p class="challenge-desc-v2" id="challenge-explanation"></p>
+                            <div class="challenge-meta-row">
+                                <span class="challenge-meta-chip">⏱️ ~45 min</span>
+                                <span class="challenge-meta-chip">🔥 +150 pts</span>
+                                <span class="challenge-meta-chip">🔥 Série +1</span>
+                                <span class="challenge-meta-chip">🏅 Badge "Curieux"</span>
+                            </div>
+                            <div class="challenge-btn-row">
+                                <button class="btn btn-green challenge-accept-btn" id="btn-challenge-log">Accepter le défi →</button>
+                                <button class="btn btn-secondary" id="btn-reload-challenge">Passer aujourd'hui</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── LEADERBOARD ── -->
+            <section id="tab-leaderboard" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Classement</h1>
+                        <p class="page-subtitle" id="lb-subtitle">Top apprenants de la communauté</p>
+                    </div>
+                    <div class="page-actions">
+                        <div class="lb-toggle">
+                            <button class="lb-toggle-btn" id="lb-btn-week">Cette semaine</button>
+                            <button class="lb-toggle-btn active" id="lb-btn-all">Tous les temps</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lb-outer">
+                    <div id="leaderboard-list"></div>
+                </div>
+            </section>
+
+            <!-- ── CHAT ── -->
+            <section id="tab-chat" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Chat IA</h1>
+                        <p class="page-subtitle">Pose toutes tes questions, reçois des explications adaptées à ton niveau</p>
+                    </div>
+                </div>
+                <div class="chat-outer">
+                    <div class="chat-card-v2">
+                        <div id="chat-messages" class="chat-messages-v2">
+                            <div class="chat-row">
+                                <div class="chat-avatar bot-avatar">E</div>
+                                <div class="chat-bubble bot-bubble">
+                                    👋 Salut ! Je suis ton coach d'apprentissage IA. Pose-moi n'importe quelle question ! 📚
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-suggestions-row">
+                            <button class="chat-suggest-btn" data-q="Comment rester motivé dans mon apprentissage ?">Rester motivé ?</button>
+                            <button class="chat-suggest-btn" data-q="Crée-moi un plan d'apprentissage de 30 jours">Plan 30 jours</button>
+                            <button class="chat-suggest-btn" data-q="Quelles sont les meilleures techniques de mémorisation ?">Mémorisation</button>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chat-input" placeholder="Pose une question..." maxlength="1000">
+                            <button id="btn-chat-send" class="btn btn-primary chat-send-btn">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── PROFIL ── -->
+            <section id="tab-profil" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Mon profil</h1>
+                        <p class="page-subtitle">Plus ton profil est complet, plus les quiz et les idées suggérées te correspondent</p>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <div class="form-section">
+                        <div class="form-label-row">
+                            <label class="form-label">Profil complété</label>
+                            <span id="pf-completion-pct" class="form-label-hint">0%</span>
+                        </div>
+                        <div class="quiz-progress-track"><div class="quiz-progress-fill" id="pf-completion-bar" style="width:0%"></div></div>
+                    </div>
+                    <div class="profile-grid">
+                        <div class="form-section">
+                            <label class="form-label">Date de naissance</label>
+                            <input type="date" id="pf-birth">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Lieu de résidence</label>
+                            <input type="text" id="pf-location" placeholder="Ville, pays">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Statut</label>
+                            <select id="pf-status">
+                                <option value="">— Choisir —</option>
+                                <option>Étudiant</option>
+                                <option>Salarié</option>
+                                <option>Indépendant / freelance</option>
+                                <option>Entrepreneur</option>
+                                <option>En recherche d'emploi</option>
+                                <option>Parent au foyer</option>
+                                <option>Retraité</option>
+                            </select>
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Objectif principal</label>
+                            <select id="pf-goal">
+                                <option value="">— Choisir —</option>
+                                <option>Reconversion professionnelle</option>
+                                <option>Préparer un examen / certification</option>
+                                <option>Revenu complémentaire</option>
+                                <option>Créer une entreprise</option>
+                                <option>Culture personnelle</option>
+                            </select>
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Horizon / échéance</label>
+                            <input type="text" id="pf-deadline" placeholder="ex : certification en juin 2027">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Langues</label>
+                            <input type="text" id="pf-languages" placeholder="ex : français, anglais (B2)">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Formats d'apprentissage préférés</label>
+                        <div class="quiz-pills" id="pf-formats">
+                            <button type="button" class="quiz-pill" data-val="pratique / projets">🛠️ Pratique / projets</button>
+                            <button type="button" class="quiz-pill" data-val="lecture">📖 Lecture</button>
+                            <button type="button" class="quiz-pill" data-val="vidéo">🎬 Vidéo</button>
+                            <button type="button" class="quiz-pill" data-val="exercices répétés">✏️ Exercices</button>
+                            <button type="button" class="quiz-pill" data-val="cours guidés">🎓 Cours guidés</button>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-label-row">
+                            <label class="form-label">Centres d'intérêt</label>
+                            <span class="card-link" id="link-interests-edit">Modifier</span>
+                        </div>
+                        <p class="form-label-hint" style="margin-bottom:.55rem">L'IA personnalise tes suggestions et défis selon ces sujets</p>
+                        <div id="interests-tags" class="tags-row"></div>
+                        <div class="interests-edit-row hidden" id="interests-edit-panel">
+                            <input type="text" id="interests-input" placeholder="Ajouter des intérêts (séparés par des virgules)">
+                            <button id="btn-interests" class="btn btn-primary btn-sm">Ajouter</button>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Mon niveau par centre d'intérêt</label>
+                        <div id="pf-domains"></div>
+                    </div>
+                    <div class="form-section">
+                        <label class="form-label">Bio — à propos de moi</label>
+                        <textarea id="pf-bio" rows="4" maxlength="600" placeholder="Ton parcours, tes envies, ce que l'IA devrait savoir sur toi..."></textarea>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-label-row">
+                            <label class="form-label">Profil d'idéation</label>
+                            <span class="form-label-hint">utilisé par le générateur d'idées</span>
+                        </div>
+                    </div>
+                    <div class="profile-grid">
+                        <div class="form-section">
+                            <label class="form-label">Compétences &amp; ressources</label>
+                            <textarea id="pf-skills" rows="2" maxlength="400" placeholder="ex : Python, un laptop, petit budget"></textarea>
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Temps disponible</label>
+                            <textarea id="pf-time" rows="2" maxlength="400" placeholder="ex : 5 h par semaine, le soir"></textarea>
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Personnalité &amp; style de travail</label>
+                            <textarea id="pf-personality" rows="2" maxlength="400" placeholder="ex : autonome, projets itératifs"></textarea>
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label">Contraintes (perso &amp; pro)</label>
+                            <textarea id="pf-constraints" rows="2" maxlength="400" placeholder="ex : emploi à plein temps"></textarea>
+                        </div>
+                    </div>
+                    <button id="btn-profile-save" class="btn btn-primary btn-large">💾 Enregistrer mon profil</button>
+                </div>
+            </section>
+
+            <!-- ── AIDE ── -->
+            <section id="tab-aide" class="tab-content">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Centre d'aide ❓</h1>
+                        <p class="page-subtitle">Questions fréquentes et support</p>
+                    </div>
+                    <div class="page-actions">
+                        <button class="btn btn-secondary btn-sm" id="btn-aide-tour">💡Guide d'utilisation </button>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="card aide-faq-card">
+                    <p class="card-title" style="margin-bottom:1.1rem">Questions fréquentes</p>
+                    <div class="faq-list">
+                        <details class="faq-item">
+                            <summary class="faq-q">Comment fonctionne le système de points ?</summary>
+                            <p class="faq-a">Chaque session loguée rapporte des points selon la durée : 15 min = 15 pts, 30 min = ×1,5, 60+ min = ×2. Les quiz et défis du jour donnent des points bonus supplémentaires.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Qu'est-ce qu'une série (streak) ?</summary>
+                            <p class="faq-a">La série compte le nombre de jours consécutifs où tu as loggé au moins une session d'apprentissage. Elle repart à 0 si tu sautes un jour complet.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Comment ajouter mes centres d'intérêt ?</summary>
+                            <p class="faq-a">Dans ton Profil (clique sur ton nom en bas de la barre latérale), va à la carte "Centres d'intérêt", clique sur "Modifier" et ajoute tes sujets séparés par des virgules (ex : Python, Marketing, Maths).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Combien de sessions puis-je logger par jour ?</summary>
+                            <p class="faq-a">Jusqu'à 3 sessions par jour. Chaque session compte pour protéger ta série et te rapporte des points, même si tu dépasses la limite.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Qu'est-ce que le Défi du Jour ?</summary>
+                            <p class="faq-a">Un défi d'apprentissage unique est généré chaque 24h par l'IA. Il est conçu pour te pousser hors de ta zone de confort. Logger une session sur ce sujet te donne des points bonus et peut débloquer le badge "Curieux".</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Comment utiliser le Chat IA ?</summary>
+                            <p class="faq-a">Va dans l'onglet "Chat IA" et pose ta question directement dans le champ de saisie. Tu peux aussi utiliser les suggestions rapides affichées (motivation, plan 30 jours, mémorisation...).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Comment monter de niveau ?</summary>
+                            <p class="faq-a">Accumule des points en loguant des sessions, en complétant des quiz et en relevant les défis du jour. Chaque niveau nécessite plus de points que le précédent. Ta progression est visible dans le Dashboard.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-q">Les Suggestions IA ne correspondent pas à mes attentes, pourquoi ?</summary>
+                            <p class="faq-a">Les suggestions sont basées sur tes centres d'intérêt. Assure-toi de les avoir configurés dans ton Profil. Plus tes intérêts sont précis (ex : "Machine Learning avec Python" plutôt que "Informatique"), meilleures sont les suggestions.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Poser une question -->
+                <div class="card aide-ask-card">
+                    <p class="card-title">Tu as une autre question ?</p>
+                    <p class="card-sub" style="margin-bottom:1rem">Ta question n'est pas dans la FAQ ? Envoie-la nous, nous l'ajouterons.</p>
+                    <div class="form-label-row">
+                        <label class="form-label">Ta question</label>
+                        <span class="char-counter" id="aide-char-counter">0 / 500</span>
+                    </div>
+                    <textarea id="aide-question-input" rows="3" placeholder="Décris ta question ou ton problème..." maxlength="500"></textarea>
+                    <div class="aide-ask-footer">
+                        <button class="btn btn-primary" id="btn-aide-send">Envoyer la question →</button>
+                    </div>
+                    <div id="aide-send-result" class="hidden result-box" style="margin-top:.85rem"></div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <!-- ── GUIDED TOUR ── -->
+    <div id="tour-tip" class="tour-tip hidden">
+        <div class="tour-tip-header">
+            <span class="tour-step-lbl" id="tour-step-lbl">Étape 1 sur 8</span>
+            <button class="tour-close-btn" id="btn-tour-close" title="Fermer">✕</button>
+        </div>
+        <h3 class="tour-tip-title" id="tour-tip-title"></h3>
+        <p class="tour-tip-body" id="tour-tip-body"></p>
+        <div class="tour-dots" id="tour-dots"></div>
+        <div class="tour-tip-footer">
+            <button class="tour-skip-btn" id="btn-tour-skip">Passer le guide</button>
+            <div class="tour-nav">
+                <button class="btn btn-secondary btn-sm hidden" id="btn-tour-prev">← Préc.</button>
+                <button class="btn btn-primary btn-sm" id="btn-tour-next">Suivant →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

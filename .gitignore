@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+app.log
+learning_streak.db
+.obsidian/workspace.json
